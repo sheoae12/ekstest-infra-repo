@@ -1,0 +1,10 @@
+# tfstate를 저장할 S3 설정
+terraform {
+  backend "s3" {
+    bucket = "ekstest-bucket"
+    key = "terrafrom.state"
+    region = "ap-northeast-2"
+    profile = "ekstest"
+  }
+}
+
